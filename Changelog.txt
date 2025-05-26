@@ -1,7 +1,12 @@
 ---------------------
 Update 1.0.0
 ---------------------
-Añadido Red_Dragon.py
-Corregido el código de os.system
-Corregido el código de la linea 12
-Corregido el código de figlet
+* Añadido Red_Dragon.py
+* Corregido el código de os.system
+* Corregido el código de la linea 12
+* Corregido el código de figlet
+
+----------------------
+Update 1.0.1
+-----------------------
+* Añadido código ASCII después del Clear
