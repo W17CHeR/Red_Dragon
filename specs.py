@@ -35,7 +35,7 @@ def specs_menu():
             break
         elif opcion.lower() == "q":
             print(colored("\nSaliendo del programa Specs...", "green"))
-            sys.exit()
+            sys.exit(99)
         else:
             print(colored("Opción no válida. Intenta de nuevo.", "red"))
 
