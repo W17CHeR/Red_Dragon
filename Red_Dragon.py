@@ -47,8 +47,11 @@ def print_title():
 """
     print(colored(ascii_logo, 'red'))
     print(colored(os.popen('figlet -f slant "Red Dragon"').read(), 'red'))
+    print("="*75)
     print(colored("Desarrollado por Sergio aka: W17CHeR", 'green'))
+    print("="*75)
     print(colored("Este programa es para fines educativos y de entretenimiento, no se debe usar para actividades ilegales.", 'yellow'))
+    print("="*75)
     print(colored("Version 1.0.1", 'blue'))
 
 # Aquí mostrara el menú
