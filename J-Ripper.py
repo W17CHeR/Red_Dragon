@@ -68,6 +68,11 @@ def j_ripper_menu():
             crackear_fichero_protegido()
         elif opcion == "4":
             print(colored("Regresando al menú principal...", "yellow"))
+            try:
+                subprocess.run(["python", "Red_Dragon.py"], check=True)
+            except Exception as e:
+                print(colored(f"No se pudo regresar a Red_Dragon: {e}", "red"))
+                exit()
             break
         elif opcion.lower() == "q":
             print(colored("Saliendo de J-Ripper...", "green"))
