@@ -8,7 +8,7 @@ import subprocess
 from termcolor import colored
 
 def print_title():
-    os.system('clear)  # Limpia la terminal' \
+    os.system('clear')  # Limpia la terminal
     print(colored(os.popen('figlet -f slant "Red Dragon"').read(), 'red'))
 
 # Aquí mostrara el menú
