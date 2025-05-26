@@ -48,7 +48,7 @@ def print_title():
     print(colored(ascii_logo, 'red'))
     print(colored(os.popen('figlet -f slant "Red Dragon"').read(), 'red'))
     print("="*75)
-    print(colored("Desarrollado por Sergio aka: W17CHeR", 'green').center(50))
+    print(colored("Desarrollado por Sergio aka: W17CHeR", 'green').center(75))
     print("="*75)
     print(colored("Este programa fue desarrollado con fines éticos y educativos", 'yellow'))
     print("="*75)
