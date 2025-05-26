@@ -15,3 +15,10 @@ Update 1.0.1
 * Corregido código en Red_Dragon.py
 * Añadido print("="*75) para ordenar mejor el texto introductorio
 * Añadido SECURITY.md, ahora los usuarios podrán reportar problemas de vulnerabilidad
+
+------------------------
+Update 1.0.2
+------------------------
+* Corregido código de Red_Dragon.py
+* Corregido código para salir de specs.py
+* Corregido código para slair de J-Ripper.py
