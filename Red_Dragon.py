@@ -3,6 +3,8 @@
 # ------------------------------------------------------------------------------------------------------------------
 # Este programa es desarrollado por Sergio aka: W17CHeR
 # ------------------------------------------------------------------------------------------------------------------
+# Importante: Este programa es para fines educativos y de entretenimiento, no se debe usar para actividades ilegales.
+# ------------------------------------------------------------------------------------------------------------------
 import os
 import subprocess
 from termcolor import colored
@@ -43,14 +45,15 @@ def print_title():
                                            :     .::  :::::. .::::.  .#%#                           
                                                     .      .             :  
 """
-    print(colored(os.popen('figlet -f slant "Red_Dragon"').read(), 'red'))
+    print(colored(ascii_logo, 'red'))
+    print(colored(os.popen('figlet -f slant "Red Dragon"').read(), 'red'))
 
 # Aquí mostrara el menú
 
 def menu():
     print("Selecciona una opción:")
     print("1. Mostrar especificaciones del sistema")
-    print("2. Ejecutar John The Ripper")
+    print("2. ejecutar John The Ripper")
     print("q. Salir")
 
 # Aquí mostrara las opciones del menú
