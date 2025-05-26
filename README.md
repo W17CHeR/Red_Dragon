@@ -9,3 +9,4 @@ Para el buen funcionamiento de Red_Dragon, ejecutaremos lo siguiente:
 sudo apt install fastfetch
 ------------------------------------
 sudo apt install figlet
+------------------------------------
