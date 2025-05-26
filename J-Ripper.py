@@ -77,7 +77,7 @@ def j_ripper_menu():
             break
         elif opcion.lower() == "q":
          print(colored("Saliendo de J-Ripper... Gracias por usar Red_Dragon ¡Hasta luego!", "green"))
-         sys.exit(99)
+         sys.exit(0)
 
         else:
             print(colored("Opción no válida. Intenta de nuevo.", "red"))
