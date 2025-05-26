@@ -13,3 +13,4 @@ Update 1.0.1
 * Corregido el código ASCII que no se mostraba
 * Añadido John The Ripper
 * Corregido código en Red_Dragon.py
+* Añadido print("="*75) para ordenar mejor el texto introductorio
