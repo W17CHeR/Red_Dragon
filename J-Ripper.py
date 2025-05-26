@@ -7,6 +7,7 @@
 # -------------------------------------------------------------------------
 
 import os
+import sys
 import subprocess
 from termcolor import colored
 
@@ -75,8 +76,9 @@ def j_ripper_menu():
                 exit()
             break
         elif opcion.lower() == "q":
-            print(colored("Saliendo de J-Ripper...", "green"))
-            exit()
+         print(colored("Saliendo de J-Ripper... Gracias por usar Red_Dragon ¡Hasta luego!", "green"))
+         sys.exit(99)
+
         else:
             print(colored("Opción no válida. Intenta de nuevo.", "red"))
 
