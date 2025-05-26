@@ -53,6 +53,8 @@ def print_title():
     print(colored("Este programa es para fines educativos y de entretenimiento, no se debe usar para actividades ilegales.", 'yellow'))
     print("="*75)
     print(colored("Version 1.0.1", 'blue'))
+    print("="*75)
+# ------------------------------------------------------------------------------------------------------------------
 
 # Aquí mostrara el menú
 
