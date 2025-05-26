@@ -9,7 +9,7 @@ from termcolor import colored
 
 def print_title():
     os.system('clear')  # Limpia la terminal
-    print(colored(os.popen('figlet -f slant "Red Dragon"').read(), 'red'))
+    print(colored(os.popen('figlet -f slant "Red_Dragon"').read(), 'red'))
 
 # Aquí mostrara el menú
 
