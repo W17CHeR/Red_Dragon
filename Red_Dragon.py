@@ -9,7 +9,6 @@ import os
 import sys
 import subprocess
 from termcolor import colored
-
 def print_title():
     os.system('clear')  # Limpia la terminal
     ascii_logo = """
@@ -53,7 +52,7 @@ def print_title():
     print("="*75)
     print(colored("Este programa fue desarrollado con fines éticos y educativos", 'yellow').center(75))
     print("="*75)
-    print(colored("Version 1.0.2", 'blue').center(75))
+    print(colored("Version 1.0.1", 'blue').center(75))
     print("="*75)
 # ------------------------------------------------------------------------------------------------------------------
 
@@ -63,6 +62,7 @@ def menu():
     print("Selecciona una opción:")
     print("1. Mostrar especificaciones del sistema")
     print("2. Ejecutar John The Ripper")
+    print("3. Ejecutar Aircrack-ng")
     print("q. Salir")
 
 # Aquí mostrara las opciones del menú
@@ -92,7 +92,15 @@ def main():
                 if result.returncode == 0:  # Detecta que J-Ripper terminó con sys.exit(0)
                     print(colored("Gracias por usar Red_Dragon. ¡Hasta luego!", 'green'))
                     sys.exit(0)
-
+        elif opcion == '3':
+            script_path = "./aircrack.py"
+            if os.path.exists(script_path):
+                try:
+                    subprocess.run(["python3", script_path])
+                except subprocess.CalledProcessError as e:
+                    print(colored(f"Error al ejecutar Aircrack-ng: {e}", 'red'))
+            else:
+                print(colored(f"El script {script_path} no existe.", 'red'))
 
         elif opcion == 'q':
             print(colored("Saliendo del programa...", 'green'))
