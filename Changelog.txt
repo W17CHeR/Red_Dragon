@@ -22,3 +22,11 @@ Update 1.0.2
 * Corregido código de Red_Dragon.py
 * Corregido código para salir de specs.py
 * Corregido código para slair de J-Ripper.py
+
+------------------------
+Update 1.0.3
+------------------------
+* Añadido una tercera opción en Red_Dragon.py
+* Añadido aircrak-ng
+* Añadido airodump-ng
+* Creado nueva herramienta llamada aircrack.py
