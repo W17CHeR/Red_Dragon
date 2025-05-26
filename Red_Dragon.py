@@ -53,7 +53,7 @@ def print_title():
     print("="*75)
     print(colored("Este programa fue desarrollado con fines éticos y educativos", 'yellow').center(75))
     print("="*75)
-    print(colored("Version 1.0.1", 'blue').center(75))
+    print(colored("Version 1.0.2", 'blue').center(75))
     print("="*75)
 # ------------------------------------------------------------------------------------------------------------------
 
