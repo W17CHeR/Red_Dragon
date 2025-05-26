@@ -1,0 +1,6 @@
+---------------------
+Update 1.0.0
+---------------------
+Añadido Red_Dragon.py
+Corregido el código de os.system
+Corregido el código de la linea 12
