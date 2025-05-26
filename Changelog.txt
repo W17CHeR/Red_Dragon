@@ -14,3 +14,4 @@ Update 1.0.1
 * Añadido John The Ripper
 * Corregido código en Red_Dragon.py
 * Añadido print("="*75) para ordenar mejor el texto introductorio
+* Añadido SECURITY.md, ahora los usuarios podrán reportar problemas de vulnerabilidad
