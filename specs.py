@@ -7,6 +7,7 @@
 # -------------------------------------------------------------------------------
 
 import os
+import sys
 from termcolor import colored
 
 def mostrar_menu():
@@ -34,7 +35,7 @@ def specs_menu():
             break
         elif opcion.lower() == "q":
             print(colored("\nSaliendo del programa Specs...", "green"))
-            exit()
+            sys.exit()
         else:
             print(colored("Opción no válida. Intenta de nuevo.", "red"))
 
