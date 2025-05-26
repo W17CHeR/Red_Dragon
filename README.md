@@ -7,4 +7,5 @@ Este programa fue desarrollado con fines éticos y educativos, cualquier uso ind
 Para el buen funcionamiento de Red_Dragon, ejecutaremos lo siguiente:
 
 sudo apt install fastfetch
+------------------------------------
 sudo apt install figlet
