@@ -80,6 +80,17 @@ def main():
                     print(colored(f"Error al ejecutar el script: {e}", 'red'))
             else:
                 print(colored(f"El script {script_path} no existe.", 'red'))
+
+        elif opcion == '2':
+            script_path = "./J-Ripper.py"
+            if os.path.exists(script_path):
+                try:
+                    subprocess.run(["python", script_path], check=True)
+                except subprocess.CalledProcessError as e:
+                    print(colored(f"Error al ejecutar el script: {e}", 'red'))
+            else:
+                print(colored(f"El script {script_path} no existe.", 'red'))
+
         elif opcion == 'q':
             print(colored("Saliendo del programa...", 'green'))
             break
