@@ -6,6 +6,7 @@
 # Importante: Este programa es para fines educativos y de entretenimiento, no se debe usar para actividades ilegales.
 # ------------------------------------------------------------------------------------------------------------------
 import os
+import sys
 import subprocess
 from termcolor import colored
 
