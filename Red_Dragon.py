@@ -50,7 +50,7 @@ def print_title():
     print("="*75)
     print(colored("Desarrollado por Sergio aka: W17CHeR", 'green'))
     print("="*75)
-    print(colored("Este programa es para fines educativos y de entretenimiento, no se debe usar para actividades ilegales.", 'yellow'))
+    print(colored("Este programa fue desarrollado con fines éticos y educativos", 'yellow'))
     print("="*75)
     print(colored("Version 1.0.1", 'blue'))
     print("="*75)
