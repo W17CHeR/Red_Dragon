@@ -10,3 +10,4 @@ Update 1.0.0
 Update 1.0.1
 -----------------------
 * Añadido código ASCII después del Clear
+* Corregido el código ASCII que no se mostraba
