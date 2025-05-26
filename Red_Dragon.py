@@ -61,7 +61,7 @@ def print_title():
 def menu():
     print("Selecciona una opción:")
     print("1. Mostrar especificaciones del sistema")
-    print("2. ejecutar John The Ripper")
+    print("2. Ejecutar John The Ripper")
     print("q. Salir")
 
 # Aquí mostrara las opciones del menú
