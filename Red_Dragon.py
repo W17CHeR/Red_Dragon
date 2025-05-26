@@ -52,7 +52,7 @@ def print_title():
     print("="*75)
     print(colored("Este programa fue desarrollado con fines éticos y educativos", 'yellow').center(75))
     print("="*75)
-    print(colored("Version 1.0.3", 'blue').center(75))
+    print(colored("Version 1.0.1", 'blue').center(75))
     print("="*75)
 # ------------------------------------------------------------------------------------------------------------------
 
@@ -89,24 +89,27 @@ def main():
             script_path = "./J-Ripper.py"
             if os.path.exists(script_path):
                 result = subprocess.run(["python3", script_path])
-                if result.returncode == 0:  # Detecta que J-Ripper terminó con sys.exit(0)
+                if result.returncode == 0:
                     print(colored("Gracias por usar Red_Dragon. ¡Hasta luego!", 'green'))
                     sys.exit(0)
+
         elif opcion == '3':
             script_path = "./aircrack.py"
             if os.path.exists(script_path):
-                try:
-                    subprocess.run(["python3", script_path])
-                except subprocess.CalledProcessError as e:
-                    print(colored(f"Error al ejecutar Aircrack-ng: {e}", 'red'))
+                result = subprocess.run(["python3", script_path])
+                if result.returncode == 0:
+                    print(colored("Gracias por usar Red_Dragon. ¡Hasta luego!", 'green'))
+                    sys.exit(0)
             else:
                 print(colored(f"El script {script_path} no existe.", 'red'))
 
         elif opcion == 'q':
             print(colored("Saliendo del programa...", 'green'))
             break
+
         else:
             print(colored("Opción no válida. Intenta de nuevo.", 'yellow'))
+
 
 if __name__ == "__main__":
     main()
