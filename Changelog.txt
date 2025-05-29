@@ -31,3 +31,9 @@ Update 1.0.3
 * Añadido airodump-ng
 * Creado nueva herramienta llamada aircrack.py
 * Corregido código en Red_Dragon.py
+
+-----------------------
+Update 1.0.4
+-----------------------
+* Corregido el código de Red_Dragon.py
+* Actualizado la versión del programa
