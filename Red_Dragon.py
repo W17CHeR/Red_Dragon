@@ -5,10 +5,12 @@
 # ------------------------------------------------------------------------------------------------------------------
 # Importante: Este programa es para fines educativos y de entretenimiento, no se debe usar para actividades ilegales.
 # ------------------------------------------------------------------------------------------------------------------
+
 import os
 import sys
 import subprocess
 from termcolor import colored
+
 def print_title():
     os.system('clear')  # Limpia la terminal
     ascii_logo = """
@@ -25,7 +27,7 @@ def print_title():
                       :::::=%%%%%%%%%%%%%%%%%%%%%%%%#*#%%%%%#+=++++#%%%%%%%%#*%%%%#*+               
                          *%%#++%%%%%%%%%%%%#%+. *+=+%%%%%%%##%%%%%%#=+%=%-#+#:.=*===                
                        +=--+@%%%%#%#+.   .:=*####*++++**%%%%%%%**+*%%%%%%#++#+:%%##=                
-                      ::-*%#%%*+*%%@@%%%%%%%%%%@%%#*+:+=*%%%%%%%%%%%%%*     .-     .                
+                      ::-*%#%%*+*%%@@%%%%%%%%%%@%%#*+:+=*%%%%%%%%%%%%%*     .-     .               
                     :::+*+=%#**%%%%%%%%%%%%%==.:=++**##*+#%%#%%%%%%%%%#                             
                    :::--:+%*#%%%%%%%%%%%%***#%%%%%%%@@%##****=*%#++++%+   ==-                       
                   ::.:::+=-#%%%%*%%%%%%%%%%%%=*%%%%%%%%%***+**:-##=::------=*##*                    
@@ -52,20 +54,19 @@ def print_title():
     print("="*75)
     print(colored("Este programa fue desarrollado con fines éticos y educativos", 'yellow').center(75))
     print("="*75)
-    print(colored("Version 1.0.4", 'blue').center(75))
+    print(colored("Version 1.0.5", 'blue').center(75))
     print("="*75)
-# ------------------------------------------------------------------------------------------------------------------
 
-# Aquí mostrara el menú
+# ------------------------------------------------------------------------------------------------------------------
 
 def menu():
     print("Selecciona una opción:")
     print("1. Mostrar especificaciones del sistema")
     print("2. Ejecutar John The Ripper")
     print("3. Ejecutar Aircrack-ng")
+    print("4. Ejecutar Metasploit")
     print("q. Salir")
 
-# Aquí mostrara las opciones del menú
 def main():
     while True:
         print_title()
@@ -76,10 +77,9 @@ def main():
             script_path = "./specs.py"
             if os.path.exists(script_path):
                 try:
-                    result = subprocess.run(["python", script_path])
+                    result = subprocess.run(["python3", script_path])
                     if result.returncode == 99:
-                        print(colored("Gracias por usar Red_Dragon. ¡Hasta luego!", "green"))
-                        sys.exit(0)
+                        continue
                 except subprocess.CalledProcessError as e:
                     print(colored(f"Error al ejecutar el script: {e}", 'red'))
             else:
@@ -98,6 +98,18 @@ def main():
             if os.path.exists(script_path):
                 result = subprocess.run(["python3", script_path])
                 if result.returncode == 0:
+                    print(colored("Gracias por usar Red_Dragon. ¡Hasta luego!", 'green'))
+                    sys.exit(0)
+            else:
+                print(colored(f"El script {script_path} no existe.", 'red'))
+
+        elif opcion == '4':
+            script_path = "./metasploit.py"
+            if os.path.exists(script_path):
+                result = subprocess.run(["python3", script_path])
+                if result.returncode == 99:
+                    continue  # Volver al menú principal
+                elif result.returncode == 0:
                     print(colored("Gracias por usar Red_Dragon. ¡Hasta luego!", 'green'))
                     sys.exit(0)
             else:
