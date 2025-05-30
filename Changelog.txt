@@ -37,3 +37,9 @@ Update 1.0.4
 -----------------------
 * Corregido el código de Red_Dragon.py
 * Actualizado la versión del programa
+
+-----------------------
+Update 1.0.5
+-----------------------
+* Añadido nueva herramienta en Red_Dragon.py
+* Añadido nueva herramienta llamada Metasploit.py
